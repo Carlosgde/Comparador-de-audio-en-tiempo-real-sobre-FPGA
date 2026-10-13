@@ -1,0 +1,111 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Mon Jun 16 19:44:51 2025
+| Host         : funda19 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DAM_control_sets_placed.rpt
+| Design       : DAM
+| Device       : xc7a50ti
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    33 |
+|    Minimum number of control sets                        |    33 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   155 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    33 |
+| >= 0 to < 4        |    11 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     7 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              86 |           40 |
+| No           | No                    | Yes                    |               7 |            5 |
+| No           | Yes                   | No                     |              45 |           14 |
+| Yes          | No                    | No                     |             132 |           42 |
+| Yes          | No                    | Yes                    |              27 |            7 |
+| Yes          | Yes                   | No                     |              52 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+--------------+
+|              Clock Signal              |                      Enable Signal                     |                            Set/Reset Signal                           | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+--------------+
+|  Inst_Comparador/Inst_uart_sd/clk      | Inst_Comparador/Inst_uart_sd/rx_buffer_data[2]_i_1_n_0 |                                                                       |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                         | Inst_Comparador/Inst_mic_auds/data_rx_ok_event_reg     | btnc_i_IBUF                                                           |                1 |              1 |         1.00 |
+|  Inst_Comparador/Inst_uart_sd/clk      |                                                        |                                                                       |                1 |              1 |         1.00 |
+|  Inst_Comparador/Inst_uart_sd/clk      | Inst_Comparador/Inst_uart_sd/rx_buffer_data[3]_i_1_n_0 |                                                                       |                1 |              1 |         1.00 |
+|  Inst_Comparador/Inst_uart_sd/clk      | Inst_Comparador/Inst_uart_sd/rx_buffer_data[5]_i_1_n_0 |                                                                       |                1 |              1 |         1.00 |
+|  Inst_Comparador/Inst_uart_sd/clk      | Inst_Comparador/Inst_uart_sd/rx_buffer_data[0]_i_1_n_0 |                                                                       |                1 |              1 |         1.00 |
+|  Inst_Comparador/Inst_uart_sd/clk      | Inst_Comparador/Inst_uart_sd/rx_buffer_data[7]_i_1_n_0 |                                                                       |                1 |              1 |         1.00 |
+|  Inst_Comparador/Inst_uart_sd/clk      | Inst_Comparador/Inst_uart_sd/rx_buffer_data[6]_i_1_n_0 |                                                                       |                1 |              1 |         1.00 |
+|  Inst_Comparador/Inst_uart_sd/clk      | Inst_Comparador/Inst_uart_sd/rx_buffer_data[1]_i_1_n_0 |                                                                       |                1 |              1 |         1.00 |
+|  Inst_Comparador/Inst_uart_sd/clk      | Inst_Comparador/Inst_uart_sd/rx_buffer_data[4]_i_1_n_0 |                                                                       |                1 |              1 |         1.00 |
+|  Inst_Comparador/Inst_uart_sd/rx_event |                                                        | btnc_i_IBUF                                                           |                2 |              3 |         1.50 |
+|  CLK_IBUF_BUFG                         |                                                        | btnc_i_IBUF                                                           |                3 |              4 |         1.33 |
+|  Inst_Comparador/Inst_uart_sd/rx_event | Inst_Comparador/data_rx_cont[11]_i_1_n_0               |                                                                       |                1 |              4 |         4.00 |
+|  Inst_Comparador/Inst_uart_sd/clk      | Inst_Comparador/Inst_uart_sd/rx_current_bit_n_0        | Inst_Comparador/Inst_uart_sd/rx_process.rx_current_bit[3]_i_1_n_0     |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                         | Inst_Comparador/Inst_mic_auds/clk_toggles0             | Inst_Comparador/Inst_mic_auds/clk_toggles[5]_i_1_n_0                  |                3 |              6 |         2.00 |
+|  Inst_Comparador/Inst_uart_sd/rx_event | Inst_Comparador/data_rx_cont[7]_i_1_n_0                |                                                                       |                3 |              8 |         2.67 |
+|  Inst_Comparador/Inst_uart_sd/clk      | Inst_Comparador/Inst_uart_sd/rx_out_data[7]_i_1_n_0    |                                                                       |                1 |              8 |         8.00 |
+|  CLK_IBUF_BUFG                         |                                                        | Inst_Comparador/Inst_uart_sd/baud_clk_divider.baud_current[9]_i_1_n_0 |                3 |             10 |         3.33 |
+|  CLK_IBUF_BUFG                         |                                                        | Inst_VGA/eqOp69_in                                                    |                3 |             11 |         3.67 |
+|  CLK_IBUF_BUFG                         | Inst_VGA/Inst_MicDisplay/rd_frame_start_reg0           |                                                                       |                3 |             11 |         3.67 |
+|  CLK_IBUF_BUFG                         | Inst_VGA/Inst_MicDisplaySD/rd_frame_start_reg0         |                                                                       |                2 |             11 |         5.50 |
+|  CLK_IBUF_BUFG                         |                                                        | Inst_VGA/Inst_MicDisplay/en_wr_sample_buf_ram                         |                4 |             12 |         3.00 |
+|  CLK_IBUF_BUFG                         |                                                        | Inst_VGA/Inst_MicDisplaySD/en_wr_sample_buf_ram                       |                4 |             12 |         3.00 |
+|  CLK_IBUF_BUFG                         | Inst_VGA/eqOp69_in                                     | Inst_VGA/v_cntr_reg0                                                  |                3 |             12 |         4.00 |
+|  Inst_Comparador/Inst_uart_sd/rx_event | Inst_Comparador/Inst_uart_sd/E[0]                      |                                                                       |                4 |             12 |         3.00 |
+|  CLK_IBUF_BUFG                         | Inst_Comparador/Inst_mic_auds/rx_buffer0               |                                                                       |                3 |             12 |         4.00 |
+|  CLK_IBUF_BUFG                         | Inst_Comparador/Inst_mic_auds/rx_data[11]_i_1_n_0      | btnc_i_IBUF                                                           |                3 |             13 |         4.33 |
+|  CLK_IBUF_BUFG                         | Inst_Comparador/Inst_mic_auds/rdy_mic                  | btnc_i_IBUF                                                           |                3 |             13 |         4.33 |
+|  CLK_IBUF_BUFG                         | Inst_Comparador/Inst_mic_auds/E[0]                     |                                                                       |                5 |             18 |         3.60 |
+|  CLK_IBUF_BUFG                         | Inst_VGA/Inst_MicDisplay/en_wr_sample_buf_ram          |                                                                       |                7 |             20 |         2.86 |
+|  CLK_IBUF_BUFG                         | Inst_VGA/Inst_MicDisplaySD/en_wr_sample_buf_ram        |                                                                       |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG                         | Inst_Comparador/Inst_mic_auds/reset_n                  | Inst_Comparador/Inst_mic_auds/count[31]_i_1_n_0                       |                8 |             30 |         3.75 |
+|  CLK_IBUF_BUFG                         |                                                        |                                                                       |               39 |             85 |         2.18 |
++----------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+--------------+
+
+

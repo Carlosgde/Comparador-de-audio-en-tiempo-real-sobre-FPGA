@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_2.srcs/sources_1/imports/Downloads/spi_master.vhd" \
+"../../../../project_2.srcs/sources_1/imports/Downloads/Comparador.vhd" \
+"../../../../project_2.srcs/sources_1/imports/src/hdl/SyncAsync.vhd" \
+"../../../../project_2.srcs/sources_1/imports/src/hdl/MicDisplay.vhd" \
+"../../../../project_2.srcs/sources_1/imports/src/hdl/Pwm.vhd" \
+"../../../../project_2.srcs/sources_1/imports/src/hdl/RgbLed.vhd" \
+"../../../../project_2.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd" \
+"../../../../project_2.srcs/sources_1/imports/src/hdl/Vga.vhd" \
+"../../../../project_2.srcs/sources_1/imports/src/hdl/top.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,22 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/Downloads/spi_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'spi_master'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/Downloads/Comparador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Comparador'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/SyncAsync.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SyncAsync'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/MicDisplay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MicDisplay'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/Pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Pwm'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/RgbLed.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RgbLed'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RgbLedDisplay'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/Vga.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Vga'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nexys4DdrUserDemo'
+ERROR: [VRFC 10-1471] type error near mic_data_aux ; current type std_logic_vector; expected type std_logic [C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/top.vhd:190]
+ERROR: [VRFC 10-1471] type error near mic_data_aux ; current type std_logic_vector; expected type std_logic [C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/top.vhd:192]
+ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/top.vhd:54]
+INFO: [VRFC 10-8704] VHDL file 'C:/Users/user2/Desktop/project_2/project_2/project_2/project_2/project_2.srcs/sources_1/imports/src/hdl/top.vhd' is ignored due to errors

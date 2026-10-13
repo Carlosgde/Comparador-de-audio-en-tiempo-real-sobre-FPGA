@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1750095843" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Nexys4DdrUserDemo.dcp">
+  <File Type="PA-TCL" Name="DAM.tcl"/>
+  <File Type="REPORTS-TCL" Name="DAM_reports.tcl"/>
+  <File Type="RDS-RDS" Name="DAM.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="DAM_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="DAM_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DAM_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DAM.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DAM_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DAM_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/spi_master.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/spi_master.vhd"/>
+        <Attr Name="ImportTime" Val="1748340082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/Comparador.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Comparador.vhd"/>
+        <Attr Name="ImportTime" Val="1748340082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/hdl/SyncAsync.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/WorkBORI/oob/Nexys-A7/hw/src/hdl/SyncAsync.vhd"/>
+        <Attr Name="ImportTime" Val="1658932624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/hdl/MicDisplay.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/WorkBORI/oob/Nexys-A7/hw/src/hdl/MicDisplay.vhd"/>
+        <Attr Name="ImportTime" Val="1658932624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/hdl/RgbLed.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/WorkBORI/oob/Nexys-A7/hw/src/hdl/RgbLed.vhd"/>
+        <Attr Name="ImportTime" Val="1658932624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/hdl/RgbLedDisplay.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/WorkBORI/oob/Nexys-A7/hw/src/hdl/RgbLedDisplay.vhd"/>
+        <Attr Name="ImportTime" Val="1658932624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/hdl/Vga.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/WorkBORI/oob/Nexys-A7/hw/src/hdl/Vga.vhd"/>
+        <Attr Name="ImportTime" Val="1658932624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/hdl/top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/WorkBORI/oob/Nexys-A7/hw/src/hdl/top.vhd"/>
+        <Attr Name="ImportTime" Val="1658932624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/other/Nexys4_all.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/WorkBORI/oob/Nexys-A7/hw/src/other/Nexys4_all.coe"/>
+        <Attr Name="ImportTime" Val="1658932624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DAM"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/Nexys-A7-50T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/WorkBORI/oob/Nexys-A7/hw/src/constraints/Nexys-A7-50T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1658932624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Nexys4DdrUserDemo.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.1 (64-bit)
+# SW Build 5266912 on Sun Dec 15 09:03:24 MST 2024
+# IP Build 5264866 on Sun Dec 15 16:27:47 MST 2024
+# SharedData Build 5264680 on Wed Dec 11 12:48:36 MST 2024
+# Start of session at: Wed Jun 11 16:38:59 2025
+# Process ID         : 11012
+# Current directory  : C:/Users/user2/Desktop/DAM/DAM.runs/impl_1
+# Command line       : vivado.exe -log DAM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DAM.tcl -notrace
+# Log file           : C:/Users/user2/Desktop/DAM/DAM.runs/impl_1/DAM.vdi
+# Journal file       : C:/Users/user2/Desktop/DAM/DAM.runs/impl_1\vivado.jou
+# Running On         : funda19
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 33942 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36090 MB
+# Available Virtual  : 26939 MB
+#-----------------------------------------------------------
+source DAM.tcl -notrace

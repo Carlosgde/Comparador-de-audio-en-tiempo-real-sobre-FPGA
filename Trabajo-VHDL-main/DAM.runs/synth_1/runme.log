@@ -1,0 +1,535 @@
+
+*** Running vivado
+    with args -log DAM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DAM.tcl
+
+
+
+****** Vivado v2024.2.1 (64-bit)
+  **** SW Build 5266912 on Sun Dec 15 09:03:24 MST 2024
+  **** IP Build 5264866 on Sun Dec 15 16:27:47 MST 2024
+  **** SharedData Build 5264680 on Wed Dec 11 12:48:36 MST 2024
+  **** Start of session at: Mon Jun 16 19:44:04 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source DAM.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/WorkBORI/oob/Nexys-A7/hw/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/user2/Desktop/DAM/DAM.srcs/utils_1/imports/synth_1/Nexys4DdrUserDemo.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/user2/Desktop/DAM/DAM.srcs/utils_1/imports/synth_1/Nexys4DdrUserDemo.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top DAM -part xc7a50ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8708
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1035.457 ; gain = 468.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DAM' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/top.vhd:45]
+INFO: [Synth 8-3491] module 'RgbLed' declared at 'C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLed.vhd:6' bound to instance 'Inst_RGB' of component 'RgbLed' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/top.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'RgbLed' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLed.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'RgbLed' (0#1) [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLed.vhd:22]
+INFO: [Synth 8-3491] module 'Vga' declared at 'C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:19' bound to instance 'Inst_VGA' of component 'Vga' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/top.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'Vga' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:46]
+	Parameter X_RGB_COL_WIDTH bound to: 50 - type: integer 
+	Parameter Y_RGB_COL_HEIGHT bound to: 150 - type: integer 
+	Parameter X_RGB_R_LOC bound to: 1050 - type: integer 
+	Parameter X_RGB_G_LOC bound to: 1125 - type: integer 
+	Parameter X_RGB_B_LOC bound to: 1200 - type: integer 
+	Parameter Y_RGB_1_LOC bound to: 675 - type: integer 
+INFO: [Synth 8-3491] module 'RgbLedDisplay' declared at 'C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd:36' bound to instance 'Inst_RGBLedDisplay' of component 'RgbLedDisplay' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:1142]
+INFO: [Synth 8-638] synthesizing module 'RgbLedDisplay' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd:68]
+	Parameter X_RGB_COL_WIDTH bound to: 50 - type: integer 
+	Parameter Y_RGB_COL_HEIGHT bound to: 150 - type: integer 
+	Parameter X_RGB_R_LOC bound to: 1050 - type: integer 
+	Parameter X_RGB_G_LOC bound to: 1125 - type: integer 
+	Parameter X_RGB_B_LOC bound to: 1200 - type: integer 
+	Parameter Y_RGB_1_LOC bound to: 675 - type: integer 
+	Parameter Y_RGB_2_LOC bound to: 840 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RgbLedDisplay' (0#1) [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd:68]
+	Parameter X_WIDTH bound to: 915 - type: integer 
+	Parameter Y_HEIGHT bound to: 375 - type: integer 
+	Parameter X_START bound to: 25 - type: integer 
+	Parameter Y_START bound to: 125 - type: integer 
+	Parameter PXLCLK_FREQ_HZ bound to: 108000000 - type: integer 
+	Parameter H_MAX bound to: 1688 - type: integer 
+	Parameter SAMPLE_RATE_DIV bound to: 4096 - type: integer 
+	Parameter BG_COLOR bound to: 12'b111111111111 
+	Parameter ACTIVE_COLOR bound to: 12'b000000001000 
+INFO: [Synth 8-3491] module 'MicDisplay' declared at 'C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:32' bound to instance 'Inst_MicDisplay' of component 'MicDisplay' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:1177]
+INFO: [Synth 8-638] synthesizing module 'MicDisplay' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:56]
+	Parameter X_WIDTH bound to: 915 - type: integer 
+	Parameter Y_HEIGHT bound to: 375 - type: integer 
+	Parameter X_START bound to: 25 - type: integer 
+	Parameter Y_START bound to: 125 - type: integer 
+	Parameter PXLCLK_FREQ_HZ bound to: 108000000 - type: integer 
+	Parameter H_MAX bound to: 1688 - type: integer 
+	Parameter SAMPLE_RATE_DIV bound to: 4096 - type: integer 
+	Parameter BG_COLOR bound to: 12'b111111111111 
+	Parameter ACTIVE_COLOR bound to: 12'b000000001000 
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (0#1) [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'MicDisplay' (0#1) [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:56]
+	Parameter X_WIDTH bound to: 915 - type: integer 
+	Parameter Y_HEIGHT bound to: 375 - type: integer 
+	Parameter X_START bound to: 25 - type: integer 
+	Parameter Y_START bound to: 615 - type: integer 
+	Parameter PXLCLK_FREQ_HZ bound to: 108000000 - type: integer 
+	Parameter H_MAX bound to: 1688 - type: integer 
+	Parameter SAMPLE_RATE_DIV bound to: 4096 - type: integer 
+	Parameter BG_COLOR bound to: 12'b111111111111 
+	Parameter ACTIVE_COLOR bound to: 12'b000000001000 
+INFO: [Synth 8-3491] module 'MicDisplay' declared at 'C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:32' bound to instance 'Inst_MicDisplaySD' of component 'MicDisplay' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:1206]
+INFO: [Synth 8-638] synthesizing module 'MicDisplay__parameterized1' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:56]
+	Parameter X_WIDTH bound to: 915 - type: integer 
+	Parameter Y_HEIGHT bound to: 375 - type: integer 
+	Parameter X_START bound to: 25 - type: integer 
+	Parameter Y_START bound to: 615 - type: integer 
+	Parameter PXLCLK_FREQ_HZ bound to: 108000000 - type: integer 
+	Parameter H_MAX bound to: 1688 - type: integer 
+	Parameter SAMPLE_RATE_DIV bound to: 4096 - type: integer 
+	Parameter BG_COLOR bound to: 12'b111111111111 
+	Parameter ACTIVE_COLOR bound to: 12'b000000001000 
+INFO: [Synth 8-256] done synthesizing module 'MicDisplay__parameterized1' (0#1) [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Vga' (0#1) [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:46]
+INFO: [Synth 8-3491] module 'Comparador' declared at 'C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/Downloads/Comparador.vhd:35' bound to instance 'Inst_Comparador' of component 'Comparador' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/top.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'Comparador' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/Downloads/Comparador.vhd:53]
+INFO: [Synth 8-3491] module 'spi_master' declared at 'C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/Downloads/spi_master.vhd:32' bound to instance 'Inst_mic_auds' of component 'SPI_master' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/Downloads/Comparador.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'spi_master' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/Downloads/spi_master.vhd:55]
+	Parameter slaves bound to: 1 - type: integer 
+	Parameter d_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spi_master' (0#1) [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/Downloads/spi_master.vhd:55]
+INFO: [Synth 8-3491] module 'UART' declared at 'C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/new/UART.vhd:5' bound to instance 'Inst_uart_sd' of component 'UART' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/Downloads/Comparador.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/new/UART.vhd:24]
+	Parameter BAUD_CYCLES bound to: 869 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UART' (0#1) [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/new/UART.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'Comparador' (0#1) [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/Downloads/Comparador.vhd:53]
+WARNING: [Synth 8-547] port direction mismatch for port 'aciertos_com' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/top.vhd:197]
+WARNING: [Synth 8-547] port direction mismatch for port 'fallos_com' [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/top.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'DAM' (0#1) [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/top.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLed.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element RGB_LED_G_GREEN_COL_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd:206]
+WARNING: [Synth 8-6014] Unused sequential element RGB_LED_B_BLUE_COL_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd:211]
+WARNING: [Synth 8-6014] Unused sequential element RGB_LED_G_BLUE_COL_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd:207]
+WARNING: [Synth 8-6014] Unused sequential element RGB_LED_B_RED_COL_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd:209]
+WARNING: [Synth 8-6014] Unused sequential element RGB_LED_B_GREEN_COL_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/RgbLedDisplay.vhd:210]
+WARNING: [Synth 8-6014] Unused sequential element mic_m_clk_rising_sync1_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element mic_m_clk_rising_sync0_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:160]
+WARNING: [Synth 8-6014] Unused sequential element mic_m_clk_rising_sync_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:161]
+WARNING: [Synth 8-3848] Net MIC_M_CLK_RISING in module/entity MicDisplay does not have driver. [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element mic_m_clk_rising_sync1_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element mic_m_clk_rising_sync0_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:160]
+WARNING: [Synth 8-6014] Unused sequential element mic_m_clk_rising_sync_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:161]
+WARNING: [Synth 8-3848] Net MIC_M_CLK_RISING in module/entity MicDisplay__parameterized1 does not have driver. [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element MIC_M_DATA_SD_REG_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:1131]
+WARNING: [Synth 8-6014] Unused sequential element cntDyn_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:1241]
+WARNING: [Synth 8-6014] Unused sequential element rgb_r_blue_col_dly_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:1291]
+WARNING: [Synth 8-6014] Unused sequential element rgb_g_blue_col_dly_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:1292]
+WARNING: [Synth 8-6014] Unused sequential element mic_blue_dly_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:1297]
+WARNING: [Synth 8-6014] Unused sequential element mic_blue_dly_sd_reg was removed.  [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/Vga.vhd:1301]
+WARNING: [Synth 8-3848] Net mosi_mic_l in module/entity Comparador does not have driver. [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/Downloads/Comparador.vhd:103]
+WARNING: [Synth 8-3848] Net data_in_uart in module/entity Comparador does not have driver. [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/Downloads/Comparador.vhd:117]
+WARNING: [Synth 8-3848] Net locked in module/entity DAM does not have driver. [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/top.vhd:114]
+WARNING: [Synth 8-3848] Net aciertos in module/entity DAM does not have driver. [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/top.vhd:116]
+WARNING: [Synth 8-3848] Net fallos in module/entity DAM does not have driver. [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/top.vhd:117]
+WARNING: [Synth 8-7129] Port RGB_LED_RED[7] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_RED[6] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_RED[5] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_GREEN[7] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_GREEN[6] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_GREEN[5] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_BLUE[7] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_BLUE[6] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_BLUE[5] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_rgb in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_rgb in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[31] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[30] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[29] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[28] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[27] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[26] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[25] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[24] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[23] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[22] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[21] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[20] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[19] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[18] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[17] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[16] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[15] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[14] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[13] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[12] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[11] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[10] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[9] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[8] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[7] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[6] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[5] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[4] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[3] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[2] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[1] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_fin[0] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[31] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[30] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[29] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[28] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[27] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[26] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[25] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[24] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[23] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[22] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[21] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[20] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[19] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[18] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[17] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[16] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[15] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[14] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[13] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[12] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[11] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[10] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[9] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[8] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[7] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[6] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[5] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[4] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[3] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[2] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[1] in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_fin[0] in module RgbLed is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1157.238 ; gain = 590.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1157.238 ; gain = 590.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1157.238 ; gain = 590.164
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1157.238 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/user2/Desktop/DAM/DAM.srcs/constrs_1/imports/constraints/Nexys-A7-50T-Master.xdc]
+Finished Parsing XDC File [C:/Users/user2/Desktop/DAM/DAM.srcs/constrs_1/imports/constraints/Nexys-A7-50T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user2/Desktop/DAM/DAM.srcs/constrs_1/imports/constraints/Nexys-A7-50T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DAM_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DAM_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1246.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1246.844 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.844 ; gain = 679.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.844 ; gain = 679.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.844 ; gain = 679.770
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'sample_reg_reg' and it is trimmed from '16' to '9' bits. [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:191]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sample_reg_reg' and it is trimmed from '16' to '9' bits. [C:/Users/user2/Desktop/DAM/DAM.srcs/sources_1/imports/src/hdl/MicDisplay.vhd:191]
+INFO: [Synth 8-802] inferred FSM for state register 'id_iterator_reg' in module 'Comparador'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    "00" |                               00 |                               00
+                    "01" |                               01 |                               01
+                    "10" |                               10 |                               10
+                    "11" |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'id_iterator_reg' using encoding 'sequential' in module 'Comparador'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1246.844 ; gain = 679.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   31 Bit       Adders := 3     
+	   3 Input   14 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 7     
+	   3 Input   12 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 4     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 8     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 23    
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 21    
++---Multipliers : 
+	               5x32  Multipliers := 1     
++---RAMs : 
+	              18K Bit	(2048 X 9 bit)          RAMs := 2     
++---Muxes : 
+	  64 Input   45 Bit        Muxes := 7     
+	  64 Input   44 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input   31 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 3     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 5     
+	   8 Input    8 Bit        Muxes := 20    
+	   8 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 9     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 74    
+	   8 Input    1 Bit        Muxes := 19    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[15] in module MicDisplay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[14] in module MicDisplay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[13] in module MicDisplay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[12] in module MicDisplay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[11] in module MicDisplay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[10] in module MicDisplay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[9] in module MicDisplay__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[15] in module MicDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[14] in module MicDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[13] in module MicDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[12] in module MicDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[11] in module MicDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[10] in module MicDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIC_M_DATA_I[9] in module MicDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_RED[7] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_RED[6] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_RED[5] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_GREEN[7] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_GREEN[6] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_GREEN[5] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_BLUE[7] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_BLUE[6] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RGB_LED_BLUE[5] in module Vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aciertos_rgb in module RgbLed is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fallos_rgb in module RgbLed is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (Inst_Comparadori_6) is unused and will be removed from module DAM.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1246.844 ; gain = 679.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                | RTL Object         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Inst_VGA/Inst_MicDisplay   | sample_buf_ram_reg | 2 K x 9(READ_FIRST)    | W |   | 2 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Inst_VGA/Inst_MicDisplaySD | sample_buf_ram_reg | 2 K x 9(READ_FIRST)    | W |   | 2 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++---------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1351.312 ; gain = 784.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1352.480 ; gain = 785.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                | RTL Object         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Inst_VGA/Inst_MicDisplay   | sample_buf_ram_reg | 2 K x 9(READ_FIRST)    | W |   | 2 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Inst_VGA/Inst_MicDisplaySD | sample_buf_ram_reg | 2 K x 9(READ_FIRST)    | W |   | 2 K x 9(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++---------------------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance Inst_VGA/Inst_MicDisplay/sample_buf_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Inst_VGA/Inst_MicDisplaySD/sample_buf_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1381.125 ; gain = 814.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1578.098 ; gain = 1011.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1578.098 ; gain = 1011.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1578.098 ; gain = 1011.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1578.098 ; gain = 1011.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1579.125 ; gain = 1012.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1579.125 ; gain = 1012.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   180|
+|3     |LUT1     |   123|
+|4     |LUT2     |   602|
+|5     |LUT3     |    70|
+|6     |LUT4     |    78|
+|7     |LUT5     |    56|
+|8     |LUT6     |   111|
+|9     |MUXF7    |     1|
+|10    |RAMB18E1 |     2|
+|11    |FDCE     |    32|
+|12    |FDPE     |     1|
+|13    |FDRE     |   314|
+|14    |IBUF     |     4|
+|15    |OBUF     |    19|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1579.125 ; gain = 1012.051
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 93 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1579.125 ; gain = 922.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1579.125 ; gain = 1012.051
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1588.242 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 183 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1591.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e36491a5
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:23 . Memory (MB): peak = 1591.957 ; gain = 1216.133
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1591.957 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user2/Desktop/DAM/DAM.runs/synth_1/DAM.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file DAM_utilization_synth.rpt -pb DAM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 16 19:44:30 2025...
